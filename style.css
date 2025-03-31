@@ -1,0 +1,71 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4; /* Light background for the body */
+  font-family: sans-serif; /* Use a pleasant font */
+}
+
+.form {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.form h1{
+  text-align: center;
+}
+
+.form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form input[type="text"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form input[type="button"] {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.form input[class="btn"] {
+  background-color: indigo;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  margin-top: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.form input[type="button"]:hover {
+  background-color: #0056b3; 
+}
+
+.form input[type="button"]:active {
+  background-color: #003f7f; 
+}
+.form input[class="btn"]:hover {
+  background-color: #8c2dd0; 
+}
+
+.form input[class="btn"]:active {
+  background-color: #1c052c; 
+}

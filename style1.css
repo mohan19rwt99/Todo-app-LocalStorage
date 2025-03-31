@@ -1,0 +1,167 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.first {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 500px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.inputs {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#inputBox {
+  flex-grow: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+  font-size: 22px;
+}
+
+#addBtn {
+  padding: 10px 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+#addBtn:hover {
+  background-color: #45a049;
+}
+
+.todoList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todoList li {
+  background-color: #fff;
+  padding: 12px;
+  font-size: 25px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+}
+
+.ptag {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.todoList li:last-child {
+  border-bottom: none;
+}
+
+li > button {
+  font-size: 23px;
+  margin: 0 5px;
+}
+
+.dark-theme-button {
+  /* Added class name */
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.log-out-button{
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  padding: 10px 33px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.editButton {
+  background-color: #a6f1e0;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.removeButton {
+  background-color: #73c7c7;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* 
+const getUserSpecificTodos = () => {
+  let userEmail = localStorage.getItem("email");
+  let todoKey = `todo_${userEmail}`;
+  console.log(todoKey);
+
+  let todos;
+
+  if (localStorage.getItem(todoKey) === null) {
+    todos = [];
+  } else {
+    todos = JSON.parse(localStorage.getItem(todoKey));
+    todos.forEach((todo) => {
+    let li = document.createElement("li");
+    let p = document.createElement("p");
+    p.className = "ptag";
+    p.innerText = inputText;
+    li.appendChild(p);
+
+    // edit button
+
+    const editBtn = document.createElement("button");
+    li.appendChild(editBtn);
+    editBtn.className = "editButton";
+    editBtn.textContent = "Edit";
+
+    // remove button
+    const remBtn = document.createElement("button");
+    li.appendChild(remBtn);
+    remBtn.className = "removeButton";
+    remBtn.textContent = "Remove";
+
+    todoList.appendChild(li);
+    inputBox.value = "";
+    });
+  }
+}
+
+;
+
+// Call this function on page load
+document.addEventListener("DOMContentLoaded", getUserSpecificTodos); */
